@@ -1,0 +1,54 @@
+@import "../../../../assets/styles/colors.scss";
+
+.container {
+    width: 250px;
+    margin: 0 5px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    cursor: pointer;
+    position: relative;
+
+    .icon {
+        display: none;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        background-color: $black;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+
+        .dots {
+            display: inline-block;
+            font-size: 20px;
+            margin-top: 3px;
+        }
+    }
+
+    &:hover .icon {
+        display: block;
+    }
+
+    .poster {
+        width: 100%;
+    }
+
+    .infoContainer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        .info {
+            margin: 5px 0;
+        }
+
+        .releaseDate {
+            padding: 3px 10px;
+            border-radius: 7px;
+            border: 1px solid $light-grey;
+        }
+    }
+}
+

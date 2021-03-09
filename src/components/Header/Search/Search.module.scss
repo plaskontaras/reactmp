@@ -1,0 +1,40 @@
+@import "../../../assets/styles/colors.scss";
+
+.title {
+    font-size: 25px;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.searchForm {
+    display: flex;
+
+    .searchInput {
+        width: 100%;
+        padding: 10px;
+        background-color: $black;
+        border: none;
+
+        &:focus {
+            color: $white;
+        }
+    }
+
+    .searchButton {
+        padding: 10px 40px;
+        margin-left: 10px;
+        background-color: $red;
+        color: $white;
+        border: none;
+        font-size: 13px;
+        cursor: pointer;
+        text-transform: uppercase;
+
+        &:hover {
+            background-color: $white;
+            color: $red;
+            font-weight: bold;
+        }
+    }
+}

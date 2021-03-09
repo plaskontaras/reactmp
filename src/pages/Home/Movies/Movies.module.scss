@@ -1,0 +1,11 @@
+.moviesCounter {
+    width: 90%;
+    margin: 15px auto;
+}
+
+.moviesWrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}

@@ -1,0 +1,11 @@
+@import "../../assets/styles/colors.scss";
+
+.container {
+  padding: 15px 0;
+  color: $red;
+  text-align: center;
+
+  span {
+    font-weight: bold;
+  }
+}

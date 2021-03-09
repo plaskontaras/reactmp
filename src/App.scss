@@ -1,6 +1,18 @@
-$primary-color: #3e6f9e;
+@import "./assets/styles/colors.scss";
+@import "./assets/styles/fonts.scss";
 
-h1 {
-  color: $primary-color;
-  text-align: center;
+* {
+  font-family: $main-font;
+  color: $white;
+  font-size: 15px;
+  outline: none;
+}
+
+body {
+  background-color: $light-grey;
+}
+
+button,
+input {
+  border-radius: 4px;
 }

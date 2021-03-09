@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "filter": "release date"
+    },
+    {
+        "id": 2,
+        "filter": "title"
+    },
+    {
+        "id": 3,
+        "filter": "vote_average"
+    },
+    {
+        "id": 4,
+        "filter": "vote_count"
+    },
+    {
+        "id": 5,
+        "filter": "release_date"
+    },
+    {
+        "id": 6,
+        "filter": "budget"
+    },
+    {
+        "id": 7,
+        "filter": "runtime"
+    }
+]
