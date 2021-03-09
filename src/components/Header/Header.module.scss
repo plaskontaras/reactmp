@@ -1,0 +1,70 @@
+@import "../../assets/styles/colors.scss";
+
+.container {
+    position: relative;
+
+    .background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url("../../assets/images/Header/background.jpg");
+        z-index: -1;
+        filter: blur(1px);
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+    }
+
+    .info {
+        width: 90%;
+        max-width: 1200px;
+        height: 320px;
+        margin: auto;
+    }
+
+    .addMovieContainer {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 40px;
+
+        .logo,
+        .addMovieButton {
+            margin: 25px 0;
+            height: 40px;
+            color: $red;
+            font-size: 18px;
+            span {
+                font-weight: bold;
+                font-size: 18px;
+            }
+        }
+
+        .addMovieButton {
+            background-color: rgba(85, 85, 85, 0.8);
+            border: none;
+            cursor: pointer;
+            text-transform: uppercase;
+            padding: 5px 10px;
+
+            &:hover {
+                background-color: $black;
+                color: $white;
+            }
+        }
+    }
+
+    .searchContainer {
+        width: 90%;
+        margin: auto;
+    }
+}

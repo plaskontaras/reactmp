@@ -1,0 +1,57 @@
+@import "../../../assets/styles/colors.scss";
+
+.container {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    justify-content: space-between;
+    border-bottom: 2px solid $light-grey;
+    margin: auto;
+    width: 90%;
+
+    .filterList {
+        display: flex;
+        justify-content: space-between;
+
+        .filterItem {
+            margin-right: 15px;
+            padding: 10px 0px;
+            cursor: pointer;
+            text-transform: uppercase;
+            outline: none;
+            position: relative;
+
+            &:hover::after,
+            &:focus::after {
+                content: "";
+                left: 0;
+                position: absolute;
+                bottom: -2px;
+                width: 100%;
+                border: 1px solid $red;
+            }
+        }
+    }
+
+    .sortByContainer {
+        display: flex;
+        align-items: center;
+        
+        .sortByText {
+            margin-right: 10px;
+            color: $light-grey;
+        }
+
+        .sortByList {
+            background-color: transparent;
+            border: none;
+            text-transform: uppercase;
+            cursor: pointer;
+            position: relative;
+
+            .sortByItem {
+                background: $black;
+            }
+        }
+    }
+}

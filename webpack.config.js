@@ -87,30 +87,35 @@ module.exports = {
                     {
                         loader: MiniCssExtractPlugin.loader
                     },
-                    'css-loader',
-                ],
+                    'css-loader'
+        ],
+    },
+            {
+    test: /\.s[ac]ss$/,
+        use: [
+            {
+                loader: MiniCssExtractPlugin.loader,
             },
             {
-                test: /\.s[ac]ss$/,
-                use: [
-                    {
-                        loader: MiniCssExtractPlugin.loader,
-                    },
-                    "css-loader",
-                    "sass-loader"
-                ]
+                loader: 'css-loader',
+                options: {
+                    modules: true,
+                }
             },
+            "sass-loader"
+        ]
+},
+{
+    test: /\.(png|svg|jpg|gif)$/,
+        use: [
             {
-                test: /\.(png|svg|jpg|gif)$/,
-                use: [
-                    {
-                        loader: 'file-loader',
-                        options: {
-                            name: 'assets/images/[name].[ext]',
-                        },
-                    },
-                ]
+                loader: 'file-loader',
+                options: {
+                    name: 'assets/images/[name].[ext]',
+                },
             },
+        ]
+},
         ]
     }
 };
